@@ -1,0 +1,126 @@
+.App {
+  position: relative;
+}
+/* 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.text-highlight {
+	color: var(--info);
+}
+.navbar {
+	position: relative;
+}
+.btn-search {
+	position: absolute;
+	right: 1%;
+}
+hr {
+  border-top: 1px solid var(--gray);
+  margin-bottom: 0;
+}
+.hr-border {
+	border-top: 1px solid var(--gray);
+}
+.journal {
+	background-color: var(--gray-dark);
+}
+.journal:hover {
+	background-color: var(--info);
+	cursor: pointer;
+}
+.journal:hover .text-highlight {
+	color: var(--gray-dark);
+	font-weight: bolder;
+}
+.journal:active {
+	background-color: var(--primary);
+}
+@media screen and (min-width: 992px) {
+    .journal {
+		background-color: var(--gray-dark);
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+	}
+}
+.truncate-heading {
+ width: 100%;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ font-size: larger;
+ display: -webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;
+}
+.calendar-button {
+	color: var(--white)
+}
+.calendar-button:hover {
+	color: var(--info);
+	text-decoration: none;
+	cursor: pointer;
+}
+.calendar-button:hover .text-highlight {
+	color: var(--white);
+}
+.calendar-button:hover .col-md-6,
+.calendar-button:hover .col-md-2 {
+	background-color: rgb(46, 45, 45);
+}
+.calendar-button:active {
+	color: var(--primary);
+}
+.footer-navigation {
+	background-color: var(--info);
+	position: fixed;
+	bottom: 0;
+}
+.router-link-button {
+	color: var(--white)
+}
+.router-link-button:active {
+	background-color: var(--primary);
+}
+.router-link-button:visited,
+.router-link-button:hover {
+	color: var(--white);
+	text-decoration: none;
+	cursor: pointer;
+}
+.router-link-button-active {
+	background-color: var(--primary);
+}
+.journal-body {
+	width: 100%;
+}
